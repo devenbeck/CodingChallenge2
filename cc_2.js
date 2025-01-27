@@ -39,3 +39,18 @@ let customers = [
 console.log(JSON.stringify(customers, null, 2)); //display the array of objects of customers
 customers.push({name: "Hank Files", email: "hankfiles101@gmail.com", purchaseAmount: 235}); //add a new customer to the array
 console.log(JSON.stringify(customers,null, 2)); //display the objects of customers
+
+
+// Task 5: Object Methods
+let order = {
+    orderID: "1",
+    customerName: "Andy Griffith",
+    amount: 64,
+    calculateTax: function () {
+        const taxRate = 0.10; //tax rate 10% assumed
+        return this.amount * taxRate; //calculate the tax amount
+    } 
+}; //object of the order
+
+console.log(order); //display the object of order
+console.log("Tax amount in dollars:", order.calculateTax()); //display the tax amount
