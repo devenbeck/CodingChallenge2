@@ -5,3 +5,13 @@ console.log(products); //display the array of products
 
 products.pop(); //removes the last product from the array
 console.log("Updated Product List:", products); //display the final updated list
+
+//Task 2: Accessing and Modifying Arrays
+let scores = [13, 15, 28, 54, 9] //Array of at least 5 scores
+scores[1] = 27;  //update second element of array
+let total = scores.reduce((a,b)=> a + b, 0); //add up total of scores
+let average = total / scores.length; //find average 
+
+console.log("Updated Scores:", scores); //display updated array of scores
+console.log(total); //display sum of scores
+console.log("Average score:", average); //display average of the scores
