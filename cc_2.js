@@ -15,3 +15,16 @@ let average = total / scores.length; //find average
 console.log("Updated Scores:", scores); //display updated array of scores
 console.log(total); //display sum of scores
 console.log("Average score:", average); //display average of the scores
+
+//Task 3: Working with Objects
+let employee = {
+    name: "Riley Green",
+    age: 36,
+    department: "country music",
+    isActive: true
+}; //object of employee
+console.log(employee); //display the object of employee originally just to see comparison
+
+employee.department = "singer"; //update the department of the employee
+employee.position = "top artist"; // add a new property to the employee
+console.log(employee); //display the updated object of employee
