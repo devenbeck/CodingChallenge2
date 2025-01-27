@@ -28,3 +28,14 @@ console.log(employee); //display the object of employee originally just to see c
 employee.department = "singer"; //update the department of the employee
 employee.position = "top artist"; // add a new property to the employee
 console.log(employee); //display the updated object of employee
+
+//Task 4: Array of Objects
+let customers = [
+    {name: "Jason Aldean", email: "jaldean123@gmail.com", purchaseAmount: 175},
+    {name: "Rhett Akins", email: "rhettakins87@aol.com", purchaseAmount: 40},
+    {name: "Randy Houser", email: "randyhouser2001@yahoo.com", purchaseAmount: 75}
+]; // Array of objects of customers
+
+console.log(JSON.stringify(customers, null, 2)); //display the array of objects of customers
+customers.push({name: "Hank Files", email: "hankfiles101@gmail.com", purchaseAmount: 235}); //add a new customer to the array
+console.log(JSON.stringify(customers,null, 2)); //display the objects of customers
